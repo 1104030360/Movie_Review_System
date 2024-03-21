@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>2.1.1演員介面</title>
+
+
+        <!-- 
+            - custom css link
+        -->
+        <link rel="stylesheet" href="../guest/1.網站首頁介面.css">
+        <link rel="stylesheet" href="../guest/1.1電影介面.css">
+
+        <!-- 
+            - custom js link
+        -->
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script src="2.1.1演員介面.js"></script>
+
+        <!-- 
+            - ionicon link
+        -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+        <!-- 
+            - google font link
+        -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <style>
+        	.filled-heart {
+            	color: red; /* 設定紅色 */
+        	}
+        	
+    	</style>
+        
+    </head>
+    
+    <body id="top">
+        <header class="header" data-header>
+            <div class="container">
+
+                <div class="overlay" data-overlay></div>
+
+               <a href="2.網站首頁介面.html" class="logo" id="logo">MOVIE PPL</a>
+
+                <div class="header-actions">
+
+                    <div class="search-bar">
+                        <input id="searchInput" type="text" placeholder="Search...">
+                        <button class="search-btn" id="searchInput" onclick="performSearch()"><ion-icon name="search-outline"></ion-icon></button>
+                    </div>
+
+                    <a href="2.2會員資料介面.html" class="btn btn-primary" id="mem">aaa</a>
+
+                </div>
+            </div>
+        </header>
+        <main>
+            <article>
+                <section class="movie-detail">
+                    <div class="container" id="actor_container">
+                    </div>
+                </section>
+                <section class="upcoming">
+                    <div class="container">
+                        <h2 class="h2 section-title">Starring</h2>
+
+                        <!--這裡需要匯入movie資料，含name, poster-->
+                        <ul class="movies-list" id="MovieList">
+                        </ul>
+                    </div>
+                </section>
+            </article>
+        </main>
+
+        <footer class="footer">
+
+            <div class="footer-bottom">
+                <div class="container">
+                    <p class="introduction">
+                        Hello! We are AI Friends who design this website.
+                    </p>
+                </div>
+            </div>
+
+        </footer>
+    </body>
+</html>

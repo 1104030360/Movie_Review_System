@@ -1,0 +1,65 @@
+       /* CSS 部分 */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #333333;
+            color: #ffffff;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            background-image: url('background1.jpg');
+            background-size: cover;
+            opacity: 0.9;
+        }
+
+        .container {
+            width: 50%;
+            margin-top: 50px;
+            padding: 20px;
+            background-color: #222222;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-group input[type="text"],
+        .form-group input[type="password"] {
+            width: calc(100% - 12px);
+            padding: 6px;
+            border: 1px solid #888888;
+            border-radius: 4px;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .buttons button {
+            padding: 8px 20px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .buttons button:nth-child(1) {
+            background-color: #d9534f;
+            color: #ffffff;
+        }
+
+        .buttons button:nth-child(2) {
+            background-color: #f0ad4e;
+            color: #ffffff;
+        }

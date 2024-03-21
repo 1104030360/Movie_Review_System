@@ -1,0 +1,136 @@
+.DA-grid {
+    display: flex;
+    gap: 30px; /* 設定元素間隔 */
+    list-style: none; /* 移除項目點點 */
+}
+
+.DA-card {
+    flex: 1; /* 讓每個 .DA-card 彈性伸展 */
+    max-width: 50px; /* 設定最小寬度 */
+    text-align: center; /* 文字置中 */
+    color: var(--gray-x);
+    display: flex; /* 使用 Flexbox 來對齊內容 */
+    flex-direction: column; /* 將內容垂直排列 */
+    align-items: center; /* 在交叉軸上居中對齊 */
+}
+
+.DA-card img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.DA-card p {
+    font-size: 12px;
+    text-align: center;
+    margin: 0; /* 清除段落的預設邊距 */
+}
+
+.container2 {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.left-panel {
+    flex: 1;
+    padding: 20px;
+    background-color: #1f1f1f; /* 黑色背景 */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* 深灰色陰影 */
+}
+
+.youtube-video {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.right-panel {
+    flex: 1;
+    padding: 20px;
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    margin-left: 20px;
+}
+
+.star-rating {
+    font-size: 36px;
+    color: #a0a0a0;
+    display: flex;
+}
+
+.star-rating-login-user{ font-size: 36px;
+    color: #f39c12;
+    display: flex;
+}
+
+.leaveARating .star-rating .star {
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.star {
+    transition: color 0.3s ease;
+    margin-right: 5px;
+}
+
+.star.selected {
+    color: #f39c12; /* 填滿星星的顏色 */
+}
+
+.leaveARating p {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #a0a0a0;
+}
+.comment {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+  .like-section {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.thumbs-up {
+    color: #a0a0a0;
+    transition: color 0.3s;
+    margin-left: 2px;
+    margin-right: 8px;
+}
+
+.thumbs-up.clicked {
+    color: #f39c12;
+}
+
+.delete-comment-btn {
+    color: #fdfcfc; /* 設置按鈕文字顏色為白色 */
+    background-color: #000;
+    font-size: 16px;
+    font-weight: var(--fw-700);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 30px;
+    border: 4px solid var(--citrine);
+    border-radius: 50px;
+    transition: var(--transition-1);
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+  }
+  
+  .delete-comment-btn:hover {
+    background-color: var(--citrine); /* 遊標懸停時按鈕背景顏色為黃色 */
+    color: #000; /* 設置按鈕文字顏色為黑色 */
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>3.2.1新增引進商介面</title>
+    <link href="3.2.1新增引進商介面.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="3.2.1新增引進商介面.js"></script>   
+</head>
+<body>
+    <div class="container">
+        <h2>新增引進商</h2>
+        <div class="form-group">
+            <label for="businessNumber">營業字號：</label>
+            <input type="text" id="businessNumber" required maxlength="8">
+        </div>
+        <div class="form-group">
+            <label for="name">名稱：</label>
+            <input type="text" id="name" required maxlength="45">
+        </div>
+        <div class="form-group">
+            <label for="account">帳號：</label>
+            <input type="text" id="account" required maxlength="45">
+        </div>
+        <div class="form-group">
+            <label for="password">密碼：</label>
+            <input type="password" id="password" required maxlength="45">
+        </div>
+        <div class="buttons">
+            <button onclick="cancel()">取消</button>
+            <button onclick="confirmAdd()">確認</button>
+        </div>
+    </div> 
+</body>
+</html>

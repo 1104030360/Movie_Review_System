@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>3.2帳號管理介面</title>
+    <link href="3.2帳號管理介面.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="3.2帳號管理介面.js"></script>
+</head>
+<body>
+    <div class="container">
+    <div class="left-panel">
+        <div class="admin-avatar">
+          <!-- Replace with actual admin avatar -->
+        </div>
+        <div class="admin-options">
+          <a href="3.2帳號管理介面.html" id="admin1">帳號管理</a>
+          <a href="3.1電影管理介面.html" id="admin2">電影管理</a>
+          <a href="../../index.html">登出</a>
+        </div>
+      </div>
+      <div class="right-panel">
+        <div class="member-section">
+          <h2>會員</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>名稱</th>
+                <th>帳號</th>
+                <th>密碼</th>
+                <th>狀態</th>
+                <th>操作</th>
+              </tr>
+            </thead>
+            <tbody id="memberTableBody">
+              <!-- Example data, replace with actual member data -->
+            </tbody>
+          </table>
+        </div>
+        <div class="distributor-section">
+            <h2>引進商 <a href="3.2.1新增引進商介面.html" class="add-icon" id="add-importer"><img src="加號.png" alt="新增引進商"></a></h2>
+            <table>
+                <thead>
+                  <tr>
+                    <th>名稱</th>
+                    <th>帳號</th>
+                    <th>密碼</th>
+                    <th>狀態</th>
+                    <th>營業字號</th>
+                    <th>操作</th>
+                  </tr>
+                </thead>
+                <tbody id="distributorTableBody">
+                </tbody>
+            </table>
+          </div>
+          <div class="supplier-section">
+            <h2>放映商<a href="" class="add-icon"><img src="加號.png" alt="新增放映商"></a></h2>
+            <table>
+                <thead>
+                  <tr>
+                    <th>名稱</th>
+                    <th>帳號</th>
+                    <th>密碼</th>
+                    <th>狀態</th>
+                    <th>營業字號</th>
+                    <th>操作</th>
+                  </tr>
+                </thead>
+                <tbody id="supplierTableBody">
+                  <!-- Example data, replace with actual member data -->
+                </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+</body>
+</html>

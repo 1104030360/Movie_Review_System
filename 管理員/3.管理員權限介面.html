@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>3.管理員權限介面</title>
+    <link href="3.管理員權限介面.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+
+<body>
+    <h1>WELCOME BACK</h1>
+    <a href="3.2帳號管理介面.html" id="admin1">帳號管理</a>
+    <a href="3.1電影管理介面.html" id="admin2">電影管理</a>
+    <a href="../../index.html">登出</a>
+    <script>
+    $(document).ready(function() {
+    	var urlParams = new URLSearchParams(window.location.search);
+        var adminId = urlParams.get('admin_id');
+        $('#admin1').attr('href', '3.2帳號管理介面.html?admin_id=' + adminId);
+        $('#admin2').attr('href', '3.1電影管理介面.html?admin_id=' + adminId);
+    }); 
+    </script>
+</body>
+</html>

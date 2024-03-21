@@ -1,0 +1,152 @@
+                /* CSS 部分 */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #333333;
+            color: #ffffff;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .container {
+            width: 100%;
+            display: flex;
+        }
+        
+        .left-panel {
+            flex: 1;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #000000;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .admin-avatar {
+            width: 150px; /* 調整頭像大小 */
+            height: 150px; /* 調整頭像大小 */
+            border-radius: 50%;
+            margin-bottom: 20px;
+            background-image: url('user1.jpg');
+            background-size: cover;
+        }
+        
+        .admin-options {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start; /* 調整對齊方式 */
+            font-size: 24px; /* 調整字體大小 */
+        }
+        
+        .admin-options a {
+            text-decoration: none;
+            color: #ffffff;
+            display: block;
+            padding: 10px 20px;
+            transition: opacity 0.3s ease;
+            position: relative;
+        }
+        
+        .admin-options a:not(:last-child) {
+            position: relative;
+        }
+        
+        .admin-options a:not(:last-child)::before {
+            content: '';
+            position: absolute;
+            top: 100;
+            left: -10px; /* 調整分隔線位置 */
+            height: 60%;
+            border-left: 4px solid #ffffff; /* 白色分隔線 */
+        }
+        
+        .admin-options a:hover {
+            opacity: 0.4;
+        }
+
+        .right-panel {
+            flex: 600px;
+            padding: 20px;
+            background-color: #444444;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .member-section {
+            margin-bottom: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #adadad;
+            height: 30px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #7b7b7b;
+        }
+
+        .actions {
+            display: flex;
+            justify-content: space-around;
+            
+        }
+
+        .actions button {
+            padding: 6px 12px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            color: #ffffff;
+        }
+
+        .actions button:nth-child(1) {
+            background-color: #f0ad4e;
+        }
+
+        .actions button:nth-child(2) {
+            background-color: #d9534f;
+        }
+         /* 新增加號的樣式 */
+        .add-icon {
+            width: 15px; /* 調整加號寬度 */
+            height: 15px; /* 調整加號高度 */
+            margin-left: 10px;
+            cursor: pointer;
+        }
+        .add-icon img {
+            width: 3%; /* 圖示寬度 */
+            height: auto; /* 自動調整高度 */
+        }
+        .buttons button,
+        .suspend-button {
+            padding: 6px 12px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .buttons button:nth-child(1),
+        .suspend-button {
+            background-color: #d9534f;
+            color: #ffffff;
+        }
+
+        .buttons button:nth-child(2),
+        .suspend-button {
+            background-color: #f0ad4e;
+            color: #ffffff;
+        }
+
+        body {
+            background-image: url('background.jpg');
+            background-size: cover;
+            opacity: 0.9; /* 調整透明度 */
+        }

@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: hsl(207, 19%, 11%);
+}
+
+.container2 {
+    padding-top: 50px; /* 調整上方 padding */
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.left-panel {
+    flex: 1;
+    padding: 20px;
+    background-color: #050505; /* 深灰色背景 */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* 深灰色陰影 */
+}
+
+.user-info h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.btn-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btn {
+    padding: 10px;
+    background-color: hsl(57, 97%, 45%); /* 黃色按鈕 */
+    color: #000; /* 黑色文本 */
+    text-decoration: none;
+    border-radius: 12px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    color: hsl(57, 97%, 45%);;
+    background-color: #000000; /* 深黃色懸停效果 */
+}
+
+.right-panel {
+    flex: 5;
+    padding: 20px;
+    background-color: #1f1f1f; /* 黑色背景 */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* 深灰色陰影 */
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}

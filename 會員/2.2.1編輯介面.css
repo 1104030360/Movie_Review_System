@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: hsl(207, 19%, 11%);
+}
+
+.container2 {
+    padding-top: 50px; /* 調整上方 padding */
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.left-panel {
+    flex: 1;
+    padding: 20px;
+    background-color: #050505; /* 深灰色背景 */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* 深灰色陰影 */
+}
+
+.user-info h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.btn-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btn {
+    padding: 10px;
+    background-color: hsl(57, 97%, 45%); /* 黃色按鈕 */
+    color: #000; /* 黑色文本 */
+    text-decoration: none;
+    border-radius: 12px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    color: hsl(57, 97%, 45%);;
+    background-color: #000000; /* 深黃色懸停效果 */
+}
+
+.right-panel {
+    flex: 5;
+    padding: 20px;
+    background-color: #1f1f1f; /* 黑色背景 */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* 深灰色陰影 */
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+form {
+    background-color: #f4f4f4;
+    color: #000;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.confirm-btn {
+    background: var(--eerie-black);
+    color: var(--citrine);
+    font-size: var(--fs-9);
+    font-weight: var(--fw-700);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 2px solid var(--citrine);
+    padding: 10px 25px;
+    border-radius: 30px;
+    margin-inline: auto;
+    margin-top: 5px;
+    transition: var(--transition-1);
+  }
+  
+  .confirm-btn:is(:hover, :focus) {
+    background: var(--citrine);
+    color: var(--eerie-black);
+  }
+  
+  .additional-links {
+    display: flex; /* 將子元素排成一行 */
+    justify-content: center; /* 水平置中 */
+    align-items: center; /* 垂直置中 */
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+.additional-links a {
+    color: #5c5c5c;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.additional-links a:hover {
+    color: #ff9900;
+}
