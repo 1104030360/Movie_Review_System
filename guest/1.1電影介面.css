@@ -1,0 +1,236 @@
+.DA-grid {
+    display: flex;
+    gap: 30px; /* 設定元素間隔 */
+    list-style: none; /* 移除項目點點 */
+}
+
+.DA-card {
+    flex: 1; /* 讓每個 .DA-card 彈性伸展 */
+    max-width: 50px; /* 設定最小寬度 */
+    text-align: center; /* 文字置中 */
+    color: var(--gray-x);
+    display: flex; /* 使用 Flexbox 來對齊內容 */
+    flex-direction: column; /* 將內容垂直排列 */
+    align-items: center; /* 在交叉軸上居中對齊 */
+}
+
+.DA-card img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.DA-card p {
+    font-size: 12px;
+    text-align: center;
+    margin: 0; /* 清除段落的預設邊距 */
+}
+
+.container2 {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.left-panel {
+    flex: 1;
+    padding: 20px;
+    background-color: #1f1f1f; /* 黑色背景 */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* 深灰色陰影 */
+}
+
+.youtube-video {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.right-panel {
+    flex: 1;
+    padding: 20px;
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    margin-left: 20px;
+}
+
+.star-rating {
+    font-size: 36px;
+    color: #a0a0a0;
+    display: flex;
+}
+
+.star-rating-login-user{ font-size: 36px;
+    color: #f39c12;
+    display: flex;
+}
+
+.leaveARating .star-rating .star {
+    text-align: center;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.star {
+    transition: color 0.3s ease;
+    margin-right: 5px;
+}
+
+.star.selected {
+    color: #f39c12;
+}
+
+.leaveARating p {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #a0a0a0;
+}
+
+.comment {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+
+.like-section {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.thumbs-up {
+    color: #a0a0a0;
+    transition: color 0.3s;
+    cursor: pointer;
+    margin-left: 2px;
+    margin-right: 8px;
+}
+
+.thumbs-up.clicked {
+    color: #f39c12;
+}
+
+.rating-stars {
+    font-size: 36px;
+    color: #a0a0a0;
+    display: flex;
+}
+
+.rating-star {
+    transition: color 0.3s ease;
+    margin-right: 5px;
+    font-size: 36px;
+    color: #a0a0a0;
+    cursor: pointer;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.rating-star.filled {
+    color: #f39c12;
+}
+
+
+
+/* 模態框樣式 */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #ffffff;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 60%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#commentInput {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    resize: none;
+}
+#editCommentInput {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    resize: none;
+}
+
+#modalConfirm {
+    background-color: #f39c12;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+#modalCancel {
+    float: right;
+    font-size: 28px;
+    margin-right: 10px;
+}
+
+#modalConfirm:hover {
+    background-color: #f39c12;
+}
+
+.edit-delete-buttons {
+    bottom: 0;
+    right: 0;
+    display: flex;
+}
+
+.edit-delete-buttons button {
+    color: var(--white);
+    background-color: black;
+    font-size: 14px;
+    font-weight: var(--fw-700);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 12px 22px;
+    border: 2px solid var(--citrine);
+    border-radius: 50px;
+    transition: var(--transition-1);
+    margin-left: 120px;
+}
+  
+  

@@ -1,0 +1,87 @@
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container1 {
+    max-width: 400px;
+    margin: auto;
+    padding: 40px;
+    background-color: #050505;
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+}
+
+.container1 h1 {
+    font-size: 28px; /* 標題字體大小 */
+    margin-bottom: 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-size: 16px; /* 標籤字體大小 */
+    margin-bottom: 8px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ffffff; /* 輸入框背景顏色 */
+    color: #474747; /* 輸入框文字顏色 */
+}
+  
+  .login-btn {
+    background: var(--eerie-black);
+    color: var(--citrine);
+    font-size: var(--fs-9);
+    font-weight: var(--fw-700);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 2px solid var(--citrine);
+    padding: 10px 25px;
+    border-radius: 30px;
+    margin-inline: auto;
+    margin-top: 5px;
+    transition: var(--transition-1);
+  }
+  
+  .login-btn:is(:hover, :focus) {
+    background: var(--citrine);
+    color: var(--eerie-black);
+  }
+  
+  .additional-links {
+    display: flex; /* 將子元素排成一行 */
+    justify-content: center; /* 水平置中 */
+    align-items: center; /* 垂直置中 */
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+.additional-links a {
+    color: #e3e3e3;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.additional-links a:hover {
+    color: #ff9900;
+}
+
+.separator {
+    color: #555;
+    font-weight: bold;
+}
