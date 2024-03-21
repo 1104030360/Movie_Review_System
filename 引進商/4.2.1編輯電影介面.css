@@ -1,0 +1,124 @@
+
+        body {
+            font-family: '微軟正黑體', sans-serif;
+            background-image: url('background5.jpg');
+            background-size: 110%;
+            background-position: center;
+            padding: 0;
+            background-color: #E4D00A;
+            color: #fff;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #050505;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            opacity: 90%;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            color: #eee;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        label {
+            margin-bottom: 5px;
+            color: #fdfcfc;
+        }
+
+        input[type="text"],
+        textarea,
+        select,
+        input[type="file"],
+        input[type="submit"],
+        button {
+            margin: 10px 0;
+            width: calc(50% - 20px);
+            max-width: 400px;
+            padding: 12px;
+            border: 1px solid #666;
+            border-radius: 50px;
+            background-color: #555;
+            color: #1a1a1a;
+            font-size: 16px;
+        }
+
+        input[type="submit"],
+        button {
+            padding: 8px;
+            width: 100px;
+            font-size: 14px;
+            color: #fdfcfc;
+            background-color: #050505;
+            border: 2px solid #E4D00A;
+            transition: background-color 0.3s;
+        }
+
+        input[type="submit"]:hover,
+        button:hover {
+            background-color: #E4D00A;
+            transition: background-color 0.3s;
+        }
+
+        .input-group {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+            width: 80%;
+            margin-bottom: 20px;
+        }
+
+        .input-group > div {
+            width: 30%;
+        }
+
+        .input-group label {
+            margin-bottom: 5px;
+        }
+
+        .input-group input,
+        .input-group select,
+        .input-group textarea {
+            width: 100%;
+            padding: 12px;
+            border-radius: 50px;
+            border: 1px solid #666;
+            margin-top: 10px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+
+        .input-group-botton {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        /* 調整分級制度下拉選單文字顏色 */
+        select,
+        option {
+            color: #fff;
+            background-color: #555;
+        }
+        .add-icon {
+            width: 20px; /* 調整加號寬度 */
+            height: 20px; /* 調整加號高度 */
+            margin-left: 10px;
+        }
+        .add-icon img {
+            margin-top: 10px;
+            width: 30%; /* 圖示寬度 */
+            height: auto; /* 自動調整高度 */
+        }
+   

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4.2.1編輯電影介面</title>
+    <link href="4.2.1編輯電影介面.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script  src="4.2.1編輯電影介面.js"></script>
+    
+</head>
+<body>
+    <div class="container">
+        <h1>編輯電影</h1>
+        <!-- 這裡要有上架電影時所填的資料 -->
+        <form id="uploadForm" action="#" method="POST" enctype="multipart/form-data">
+            <div class="input-group">
+                <div>
+                    <label for="movieName">電影名稱：</label>
+                    <input type="text" id="movieName" name="movieName" maxlength="20" required>
+                </div>
+                <div>
+                    <label for="rating">分級制度：</label>
+                    <select id="rating" name="rating" required>
+                        <option value="普遍級">普遍級</option>
+                        <option value="保護級">保護級</option>
+                        <option value="輔導級">輔導級</option>
+                        <option value="限制級">限制級</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="releaseDate">上映日期：</label>
+                    <input type="date" id="releaseDate" name="releaseDate" value="2023-12-09" min="1900-01-01" max="2030-12-31" required/>
+                </div>
+            </div>
+            <div class="input-group">
+                <div>
+                    <label for="duration">電影長度(min)：</label>
+                    <input type="number" id="duration" name="duration" min="1" max="999" required>
+                </div>
+                <div>
+                    <label for="trailerLink">電影預告連結：</label>
+                    <input type="url" id="trailerLink" name="trailerLink" maxlength="100" required>
+                </div>
+            </div>
+            <div class="input-group">
+                <label for="movieInfo">電影資訊：</label>
+                <textarea id="movieInfo" name="movieInfo" required maxlength="200"></textarea>
+            </div>
+            <div class="input-group">
+                <label for="moviePoster">電影海報：</label>
+                <input type="file" id="moviePoster" name="moviePoster" accept="image/*" required>
+                <img id="posterPreview" alt="Preview" style="max-width: 100%; max-height: 200px; display: none;">
+            </div>
+            <div class="input-group-botton">
+                <button type="button" onclick="cancelUpload()">取消</button>
+                <button type="button" onclick="uploadMovie()">確認上傳</button>
+            </div>     
+        </form>
+    </div>
+
+    
+</body>
+</html>
+    

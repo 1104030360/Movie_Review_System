@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4.1.1.1演員添加介面</title>
+    <link href="4.1.1.1演員添加介面.css" rel="stylesheet">
+      <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+      <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="4.1.1.1演員添加介面.js"></script>
+    
+</head>
+<body>
+
+    <!-- 彈出式視窗：新增演員表單 -->
+    <div class="modal" id="addActorModal">
+        <h2>新增演員</h2>
+       <form id="uploadForm" action="#" method="POST" enctype="multipart/form-data">
+            <label for="actorName">演員名字:</label><br>
+            <input type="text" id="actorName" maxlength="20" required><br><br>
+            
+            <label for="actorBirthday">演員生日:</label><br>
+            <input type="date" id="actorBirthday" value="2023-12-09" min="1900-01-01" max="2030-12-31" required><br><br>
+
+            <label for="actorGender">性別:</label><br>
+            <select id="actorGender" required>
+                <option value="男">男</option>
+                <option value="女">女</option>
+            </select><br><br>
+
+            <label for="actorIntroduction">演員介紹:</label><br>
+            <textarea id="actorIntroduction" rows="4" cols="30" maxlength="200"  required></textarea><br><br>
+
+            <label for="actorImage">演員照片:</label><br>
+            <input type="file" id="actorImage" name="actorImage" accept="image/*" required><br><br>
+
+            <button type="button" onclick="BackToPrevious()">返回</button>
+            <button type="button" onclick="addNewActor()">確認</button>
+            
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333333;
+    color: #ffffff;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    min-height: 100vh; /* 讓左側列表延伸到頁面最底部 */
+}
+
+.left-panel {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #222222;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px); /* 添加模糊效果 */
+}
+
+.admin-avatar {
+    width: 150px; /* 調整頭像大小 */
+    height: 150px; /* 調整頭像大小 */
+    border-radius: 50%;
+    margin-bottom: 20px;
+    background-image: url('eric.jpg');
+    background-size: cover;
+}
+
+.admin-options {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* 調整對齊方式 */
+    font-size: 24px; /* 調整字體大小 */
+}
+
+.admin-options a {
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+    padding: 10px 20px;
+    transition: opacity 0.3s ease;
+    position: relative;
+}
+
+.admin-options a:not(:last-child) {
+    position: relative;
+}
+
+.admin-options a:not(:last-child)::before {
+    content: '';
+    position: absolute;
+    top: 100;
+    left: -10px; /* 調整分隔線位置 */
+    height: 60%;
+    border-left: 4px solid #ffffff; /* 白色分隔線 */
+}
+
+.admin-options a:hover {
+    opacity: 0.7;
+}
+
+.main-content {
+    flex: 3;
+    padding: 20px;
+}
+
+.movie-posters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* 可以設置海報之間的間距 */
+    
+}
+
+.movie-poster {
+    width: calc(20% - 20px); /* 讓每張海報佔據五分之一的寬度 */
+    margin-bottom: 20px; /* 控制行與行之間的距離 */
+    box-sizing: border-box; /* 考慮到 padding 和 border 的寬度 */
+    padding: 10px;
+    border-radius: 20px; /* 圓滑邊框設置 */
+}
+
+.movie-poster img {
+    width: 100%; /* 設置寬度 */
+    height: 80%; /* 設置高度 */
+    display: block;
+    border-radius: 20px; /* 圓滑邊框設置 */
+}
+
+.poster-options {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.poster-options button {
+    padding: 10px;
+            margin-right: 3px;
+            font-size: 14px;
+            color: #fff;
+            background-color: #050505;
+            border: 2px solid #E4D00A;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+.poster-options button:hover {
+    background-color: #666;
+}
+
+.movie-posters-title {
+    margin-top: 0; /* 將電影海報標題向上移動 */
+}
+
+.lock-btn {
+    background-color: gold;
+    color: #ffffff;
+}
+
+.view-btn {
+    background-color: gold;
+    color: #ffffff;
+}
+
+body {
+    background-image: url('background2.jpg');
+    background-size: 100%;
+    opacity: 0.9; /* 調整透明度 */
+}
+

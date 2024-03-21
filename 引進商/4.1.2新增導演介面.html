@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4.1.2新增導演介面</title>
+    <link href="4.1.2新增導演介面.css" rel="stylesheet">
+     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="4.1.2新增導演介面.js"></script>
+</head>
+<body>
+<div class="containerAll">
+    <div class="container" id="container1">
+        <h1>新增導演</h1>
+
+        <!-- 導演搜尋框 -->
+        <input type="text" id="searchDirector1" placeholder="搜尋導演">
+
+        <!-- 推薦導演列表 假資料格式-->
+        <div class="Directorlist">
+        <ul id="recommendedDirectors">
+        </ul>
+        </div>
+
+        <!-- 按鈕：取消、新增導演 -->
+        <div class="buttons">
+            <button onclick="BackToPrevious()">返回</button>
+            <button onclick="NewDirector()">新增導演</button>
+        </div>
+    </div>
+    <div class="container" id="container2">
+        <h1>該電影導演</h1>
+         <!-- 演員搜尋框 -->
+        <input type="text" id="searchDirector2" placeholder="搜尋導演">
+        <!-- 該部電影的導演列表 假資料格式-->
+        <div class="Directorlist">
+        <ul id="MovieDirectors">
+        </ul>
+        </div>
+
+    </div>
+</div>
+<script>
+document.getElementById("searchDirector1").addEventListener("input", function() {
+    // 獲取搜尋框的值
+    var searchText = this.value.toLowerCase();
+
+    // 獲取所有演員列表的 li 元素
+    var directorListItems = document.querySelectorAll(".Directorlist ul#recommendedDirectors li");
+
+    // 遍歷每個演員，檢查是否包含搜尋文字，顯示或隱藏相應的元素
+    directorListItems.forEach(function(director) {
+        var directorName = director.textContent.toLowerCase();
+        if (directorName.includes(searchText)) {
+            director.style.display = ""; // 顯示
+        } else {
+            director.style.display = "none";  // 隱藏
+        }
+    });
+});
+</script>
+<script>
+document.getElementById("searchDirector2").addEventListener("input", function() {
+    // 獲取搜尋框的值
+    var searchText = this.value.toLowerCase();
+
+    // 獲取所有演員列表的 li 元素
+    var directorListItems = document.querySelectorAll(".Directorlist ul#MovieDirectors li");
+
+    // 遍歷每個演員，檢查是否包含搜尋文字，顯示或隱藏相應的元素
+    directorListItems.forEach(function(director) {
+        var directorName = director.textContent.toLowerCase();
+        if (directorName.includes(searchText)) {
+            director.style.display = ""; // 顯示
+        } else {
+            director.style.display = "none";  // 隱藏
+        }
+    });
+});
+</script>
+</body>
+</html>

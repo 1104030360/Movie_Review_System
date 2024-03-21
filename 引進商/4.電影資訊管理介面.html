@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <title>4.電影資訊管理介面</title>
+    <link href="4.電影資訊管理介面.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    
+</head>
+	<body>
+	
+		<div class="main-container">
+		    <div class="title">
+		    <h1>What you got?</h1>
+		    </div>
+		    <div class="function-buttons">
+		    <a href="4.1上架電影介面.html" id="importer1">上架電影</a>
+		    <a href="4.2歷史上架電影介面.html" id="importer2">檢視歷史上架電影</a>
+		    <a href="4.1.3編輯演員導演介面.html" id="importer3">編輯演員/導演</a>
+		    <a href="../../index.html">登出</a>
+		    </div>
+		</div>
+		<script>
+		$(document).ready(function() {
+			var urlParams = new URLSearchParams(window.location.search);
+		    var importerId = urlParams.get('importer_id');
+		    $('#importer1').attr('href', '4.1上架電影介面.html?importer_id=' + importerId);
+		    $('#importer2').attr('href', '4.2歷史上架電影介面.html?importer_id=' + importerId);
+		    $('#importer3').attr('href', '4.1.3編輯演員導演介面.html?importer_id=' + importerId);
+		}); 
+		</script>
+	
+	</body>
+</html>

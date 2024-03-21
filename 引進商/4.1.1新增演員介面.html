@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4.1.1新增演員介面</title>
+    <link href="4.1.1新增演員介面.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="4.1.1新增演員介面.js"></script>
+</head>
+<body>
+<div class="containerAll">
+<div class="container" id="container1">
+        <h1>新增演員</h1>
+
+        <!-- 演員搜尋框 -->
+        <input type="text" id="searchActor1" placeholder="搜尋演員">
+
+        <!-- 所有演員列表 假資料格式-->
+        <div class="Actorlist">
+        	<ul id="recommendedActors">
+        	</ul>
+        </div>
+        
+
+        <!-- 按鈕：返回 -->
+        <div class="buttons">
+            <button onclick="BackToPrevious()">返回</button>
+            <button onclick="NewActor()">新增演員</button>
+        </div>
+    </div>
+    <div class="container" id="container2">
+        <h1>該電影演員</h1>
+        <!-- 演員搜尋框 -->
+        <input type="text" id="searchActor2" placeholder="搜尋演員">
+        <!-- 該部電影的演員列表 假資料格式-->
+        <div class="Actorlist">
+        <ul id="MovieActors">
+        </ul>
+        </div>
+
+    </div>
+
+</div>
+    
+</body>
+<script>
+document.getElementById("searchActor1").addEventListener("input", function() {
+    // 獲取搜尋框的值
+    var searchText = this.value.toLowerCase();
+
+    // 獲取所有演員列表的 li 元素
+    var actorListItems = document.querySelectorAll(".Actorlist ul#recommendedActors li");
+
+    // 遍歷每個演員，檢查是否包含搜尋文字，顯示或隱藏相應的元素
+    actorListItems.forEach(function(actor) {
+        var actorName = actor.textContent.toLowerCase();
+        if (actorName.includes(searchText)) {
+            actor.style.display = ""; // 顯示
+        } else {
+            actor.style.display = "none";  // 隱藏
+        }
+    });
+});
+</script>
+<script>
+document.getElementById("searchActor2").addEventListener("input", function() {
+    // 獲取搜尋框的值
+    var searchText = this.value.toLowerCase();
+
+    // 獲取所有演員列表的 li 元素
+    var actorListItems = document.querySelectorAll(".Actorlist ul#MovieActors li");
+
+    // 遍歷每個演員，檢查是否包含搜尋文字，顯示或隱藏相應的元素
+    actorListItems.forEach(function(actor) {
+        var actorName = actor.textContent.toLowerCase();
+        if (actorName.includes(searchText)) {
+            actor.style.display = ""; // 顯示
+        } else {
+            actor.style.display = "none";  // 隱藏
+        }
+    });
+});
+</script>
+</html>

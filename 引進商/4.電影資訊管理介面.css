@@ -1,0 +1,49 @@
+
+    body {
+    font-family: 'Garamond', serif;
+    background-image: url('background4.jpg');
+    background-size: 140%;
+    background-position: center;
+    color: #fffdfd;
+    text-align: center;
+    margin-top: 180px;
+    padding: 40px;
+}
+
+h1 {
+    font-size: 60px;
+    margin-bottom: 30px;
+    color: #0ad9e4;
+    text-shadow: none; /* 移除文字陰影 */
+}
+    .main-container {
+        text-align: center;
+        margin-top: 100px;
+        margin-bottom: 200px;
+        color: white;
+    }
+    .title {
+        font-size: 48px;
+        font-weight: bold;
+        margin-bottom: 30px;
+        text-decoration: none;
+    }
+
+    .function-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 100px;
+        margin-top: 20px;
+        margin-left: -10px;
+    }
+    .function-buttons a {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        font-size: 20px;
+        transition: font-size 0.3s, opacity 0.3s;
+        text-align: right;
+    }
+    .function-buttons a:hover {
+        opacity: 0.7;
+        font-size: 24px;
+    }
